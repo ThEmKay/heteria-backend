@@ -16,7 +16,7 @@ class Kunden_model extends CI_Model {
         
         $this->db->select('nummer, id, name, land, branche')
                  ->from('genossenschaft_basis gb')
-                 ->join('genossenschaft g', 'g.basis_id = gb.id')
+                 ->join('genossenschaft g', 'g.basis_id = gb.id', 'left')
                  ->order_by($f, $s);
         
         return $this->db->get();

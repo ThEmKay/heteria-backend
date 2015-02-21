@@ -21,6 +21,14 @@
                 </tr>
                 <tr>
                     <td>
+                        Branche
+                    </td>
+                    <td>
+                        <input type="text" name="fldBranche" value="<?php echo set_value('fldBranche'); ?>" style="width:100%" />
+                    </td>        
+                </tr>                
+                <tr>
+                    <td>
                         PLZ
                     </td>
                     <td>

@@ -81,7 +81,9 @@ class Grid {
                 $aPrep['table'] = $aPrep;
             }
 
-            $this->oCI->parser->parse('tabelle_view', $aPrep);
+            if(!empty($aPrep)){
+                $this->oCI->parser->parse('tabelle_view', $aPrep);
+            }
         } 
         
     }
