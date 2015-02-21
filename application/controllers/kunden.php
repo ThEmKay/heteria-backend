@@ -40,7 +40,7 @@ class Kunden extends CI_Controller{
                 mkdir('../heteria/data/'.utf8_decode($this->input->post('fldName')).'/mood');
                 mkdir('../heteria/data/'.utf8_decode($this->input->post('fldName')).'/temp');
                 
-                chmod('../heteria/data/'.utf8_decode($this->input->post('fldName')), 7777);
+                chmod('../heteria/data/'.utf8_decode($this->input->post('fldName')), 755);
                 
                 /*
                 $this->db->where('id', $iId);
