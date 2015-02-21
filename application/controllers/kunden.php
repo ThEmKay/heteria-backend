@@ -38,7 +38,7 @@ class Kunden extends CI_Controller{
                 $this->load->helper(array('text', 'inflector'));
                 $clearname = strtolower(underscore(umlaute(utf8_decode($this->input->post('fldName')))));
                 
-                mkdir('../heteria/data/'.$clearname.'/');
+                mkdir('../heteria/data/'.$clearname);
                 mkdir('../heteria/data/'.$clearname.'/bilder');
                 mkdir('../heteria/data/'.$clearname.'/logo');
                 mkdir('../heteria/data/'.$clearname.'/mood');
