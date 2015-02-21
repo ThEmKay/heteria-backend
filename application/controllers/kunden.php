@@ -35,7 +35,7 @@ class Kunden extends CI_Controller{
             
             if($this->form_validation->run()){
                 
-                $this->load->helper('text');
+                $this->load->helper(array('text', 'inflector'));
                 $clearname = strtolower(underscore(umlaute(utf8_decode($this->input->post('fldName')))));
                 
                 mkdir('../heteria/data/'.$clearname.'/');
