@@ -42,7 +42,7 @@ class Grid {
             }
 
             $arr = $oResult->result_array();
-            if(!empty($oResult)){
+            if(!empty($arr)){
                 
                 $bInd = true;
                 foreach($arr as $row){
