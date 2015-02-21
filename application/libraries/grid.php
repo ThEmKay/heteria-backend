@@ -41,9 +41,9 @@ class Grid {
             $oResult = $this->oCI->{$model}->{$function}();
             }
 
+            $arr = $oResult->result_array();
             if(!empty($oResult)){
-                $arr = $oResult->result_array();
-
+                
                 $bInd = true;
                 foreach($arr as $row){
                     
